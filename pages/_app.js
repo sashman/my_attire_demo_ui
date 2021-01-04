@@ -41,11 +41,14 @@ const MyApp = ({ Component, pageProps, loggedIn, pathname, hasTopImage, withLogi
       <div ref={appBarEl} className={classes.topHeadContainer}>
         {
           hasTopImage && <div className={classes.overHeadImage}>
-            <img className={classes.topImage} src='/main.png' alt="logo" />
+            <img className={classes.topImage} src='/main.png' alt="hero" />
           </div>
         }
         <AppBar position='relative' color='default'>
           <Toolbar className={classes.header}>
+            <Box display={{ xs: 'none', sm: 'flex' }} aria-label="menu">
+              <img src='/images/logo.svg' alt="logo" />
+            </Box>
             <Box display={{ xs: 'block', sm: 'none' }}>
               <IconButton edge="start" color="inherit" aria-label="menu">
                 <MenuIcon />
