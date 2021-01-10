@@ -1,4 +1,13 @@
 module.exports = {
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/home',
+        permanent: true,
+      },
+    ]
+  },
   webpack: (config, options) => {
     config.module.rules.push({
       test: /\.svg$/,

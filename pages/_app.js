@@ -23,7 +23,7 @@ import '../styles/global.css'
 import styles from './app.styles.js'
 
 const pages = ['home', 'workers']
-const publicPages = ['/home', '/signup', '/login']
+const publicPages = ['/', '/home', '/signup', '/login']
 
 const MyApp = ({ Component, pageProps, loggedIn, pathname, hasTopImage, withLoginFeature }) => {
   const classes = styles()
