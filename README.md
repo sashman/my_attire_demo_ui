@@ -1,6 +1,6 @@
 # Quarantine
 
- Show ppl's iniciatives when they were in qurantine
+ Show ppl's initiatives when they were in quarantine.
 
 ## Stack
   - Nextjs
