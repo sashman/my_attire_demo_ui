@@ -41,6 +41,9 @@ export default makeStyles(theme => {
     },
     topImage: {
       height: '100%',
+    },
+    logoImage: {
+      marginRight: '50px'
     }
   }
 })

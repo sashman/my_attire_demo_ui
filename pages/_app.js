@@ -6,8 +6,6 @@ import Toolbar from '@material-ui/core/Toolbar'
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
 import Box from '@material-ui/core/Box'
-import IconButton from '@material-ui/core/IconButton'
-import MenuIcon from '@material-ui/icons/Menu'
 
 import Link from 'next/link'
 import Router from 'next/router'
@@ -47,14 +45,7 @@ const MyApp = ({ Component, pageProps, loggedIn, pathname, hasTopImage, withLogi
         <AppBar position='relative' color='default'>
           <Toolbar className={classes.header}>
             <Box display={{ xs: 'none', sm: 'flex' }} aria-label="menu">
-              <img src='/images/logo.svg' alt="logo" />
-            </Box>
-            <Box display={{ xs: 'block', sm: 'none' }}>
-              <IconButton edge="start" color="inherit" aria-label="menu">
-                <MenuIcon />
-              </IconButton>
-            </Box>
-            <Box display={{ xs: 'none', sm: 'flex' }} aria-label="menu">
+              <img className={classes.logoImage} src='/images/logo.svg' alt="logo" />
               {
                 pages.map(page =>
                   <Typography key={page}>
