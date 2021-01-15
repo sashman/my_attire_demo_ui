@@ -27,7 +27,8 @@ export default makeStyles(theme => {
       zIndex: 2,
     },
     content: {
-      padding: '0px 24px 0px 24px'
+      padding: '0 8em',
+      margin: '0 auto'
     },
     fluidContent: {
       padding: '0px 0px 0px 0px'

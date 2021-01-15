@@ -60,7 +60,9 @@ const MyApp = ({ Component, pageProps, loggedIn, pathname, hasTopImage, withLogi
         </AppBar>
       </div>
       {/** Enable type of content */}
-      <Grid container className={jsxclassnames({ [classes.fluidContent]: false }, { [classes.content]: false })} style={{ paddingTop: currentNavBarHeight }}>
+      <Grid container 
+        className={jsxclassnames({ [classes.fluidContent]: false }, { [classes.content]: true })} 
+        style={{ paddingTop: currentNavBarHeight }}>
         {
           !loggedIn && !(publicPages.includes(pathname))
             ? <LoginPage {...pageProps} />
@@ -72,7 +74,8 @@ const MyApp = ({ Component, pageProps, loggedIn, pathname, hasTopImage, withLogi
 }
 
 MyApp.getInitialProps = async ({ ctx }) => {
-  const { req, pathname } = ctx
+  const { req,
+    pathname } = ctx
 
   const token = req
     ? getCookie(req.headers.cookie)

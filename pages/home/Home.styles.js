@@ -11,6 +11,24 @@ export default makeStyles(() => ({
     margin: '10px',
   },
   cardMedia: {
-    height: '300px'
+    height: '300px',
   },
+  hero: {
+    fontSize: '12px'
+  },
+  heroSubTitle: {
+    marginTop: '6em',
+    boxSizing: 'border-box'
+  },
+  heroTitle: {
+    lineHeight: '1.2',
+    fontSize: '4rem',
+    fontWeight: 'bold',
+    maxWidth: '50%',
+    display: 'inline-block',
+    padding: '1.4rem 0 2rem 0',
+  },
+  heroImage: {
+      maxWidth: '100%'
+  }
 }))
