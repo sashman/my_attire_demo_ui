@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/my_attire_demo_ui/index.html/precache-manifest.f585b248aac4315f7c4d5c9cf7596aef.js"
+  "/my_attire_demo_ui/precache-manifest.c35dbdb7cb2a99baee0a6bcb40d97524.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/my_attire_demo_ui/index.html/index.html", {
+workbox.routing.registerNavigationRoute("/my_attire_demo_ui/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
