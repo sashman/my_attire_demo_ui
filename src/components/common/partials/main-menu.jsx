@@ -326,47 +326,6 @@ export default function MainMenu ( props ) {
                         <li className={ path.indexOf( "pages/coming-soon" ) > -1 ? 'active' : '' }><Link to={ `${process.env.PUBLIC_URL}/pages/coming-soon` }>Coming Soon</Link></li>
                     </ul>
                 </li>
-                <li className={ path.indexOf( "blog/" ) > -1 ? 'active' : '' }>
-                    <Link to={ `${process.env.PUBLIC_URL}/blog/classic` } className="sf-with-ul">Blog</Link>
-
-                    <ul>
-                        <li className={ path.indexOf( "blog/classic" ) > -1 ? 'active' : '' }><Link to={ `${process.env.PUBLIC_URL}/blog/classic` }>Classic</Link></li>
-                        <li className={ path.indexOf( "blog/listing" ) > -1 ? 'active' : '' }><Link to={ `${process.env.PUBLIC_URL}/blog/listing` } >Listing</Link></li>
-                        <li className={ path.indexOf( "blog/grid" ) > -1 ? 'active' : '' }>
-                            <Link to={ `${process.env.PUBLIC_URL}/blog/grid/2cols` } className="sf-with-ul">Grid</Link>
-                            <ul>
-                                <li className={ path.indexOf( "blog/grid/2cols" ) > -1 ? 'active' : '' }><Link to={ `${process.env.PUBLIC_URL}/blog/grid/2cols` }>Grid 2 columns</Link></li>
-                                <li className={ path.indexOf( "blog/grid/3cols" ) > -1 ? 'active' : '' }><Link to={ `${process.env.PUBLIC_URL}/blog/grid/3cols` }>Grid 3 columns</Link></li>
-                                <li className={ path.indexOf( "blog/grid/4cols" ) > -1 ? 'active' : '' }><Link to={ `${process.env.PUBLIC_URL}/blog/grid/4cols` }>Grid 4 columns</Link></li>
-                                <li className={ path.indexOf( "blog/grid/sidebar" ) > -1 ? 'active' : '' }><Link to={ `${process.env.PUBLIC_URL}/blog/grid/sidebar` }>Grid sidebar</Link></li>
-                            </ul>
-                        </li>
-                        <li className={ path.indexOf( "blog/masonry" ) > -1 ? 'active' : '' }>
-                            <Link to={ `${process.env.PUBLIC_URL}/blog/masonry/2cols` } className="sf-with-ul">Masonry</Link>
-                            <ul>
-                                <li className={ path.indexOf( "blog/masonry/2cols" ) > -1 ? 'active' : '' }><Link to={ `${process.env.PUBLIC_URL}/blog/masonry/2cols` }>Masonry 2 columns</Link></li>
-                                <li className={ path.indexOf( "blog/masonry/3cols" ) > -1 ? 'active' : '' }><Link to={ `${process.env.PUBLIC_URL}/blog/masonry/3cols` }>Masonry 3 columns</Link></li>
-                                <li className={ path.indexOf( "blog/masonry/4cols" ) > -1 ? 'active' : '' }><Link to={ `${process.env.PUBLIC_URL}/blog/masonry/4cols` }>Masonry 4 columns</Link></li>
-                                <li className={ path.indexOf( "blog/masonry/sidebar" ) > -1 ? 'active' : '' }><Link to={ `${process.env.PUBLIC_URL}/blog/masonry/sidebar` }>Masonry sidebar</Link></li>
-                            </ul>
-                        </li>
-                        <li className={ path.indexOf( "blog/mask" ) > -1 ? 'active' : '' }>
-                            <Link to={ `${process.env.PUBLIC_URL}/blog/mask/grid` } className="sf-with-ul">Mask</Link>
-                            <ul>
-                                <li className={ path.indexOf( "blog/mask/grid" ) > -1 ? 'active' : '' }><Link to={ `${process.env.PUBLIC_URL}/blog/mask/grid` }>Blog mask grid</Link></li>
-                                <li className={ path.indexOf( "blog/mask/masonry" ) > -1 ? 'active' : '' }><Link to={ `${process.env.PUBLIC_URL}/blog/mask/masonry` }>Blog mask masonry</Link></li>
-                            </ul>
-                        </li>
-                        <li className={ path.indexOf( "blog/single" ) > -1 ? 'active' : '' }>
-                            <Link to={ `${process.env.PUBLIC_URL}/blog/single/3` } className="sf-with-ul">Single Post</Link>
-                            <ul>
-                                <li className={ path.indexOf( "blog/single/" ) > -1 ? 'active' : '' }><Link to={ `${process.env.PUBLIC_URL}/blog/single/3` }>Default with sidebar</Link></li>
-                                <li className={ path.indexOf( "blog/single-2" ) > -1 ? 'active' : '' }><Link to={ `${process.env.PUBLIC_URL}/blog/single-2/97` }>Fullwidth no sidebar</Link></li>
-                                <li className={ path.indexOf( "blog/single-3" ) > -1 ? 'active' : '' }><Link to={ `${process.env.PUBLIC_URL}/blog/single-3/98` }>Fullwidth with sidebar</Link></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
                 <li className={ path.indexOf( "element" ) > -1 ? 'active' : '' }>
                     <Link to={ `${process.env.PUBLIC_URL}/elements` } className="sf-with-ul">Elements</Link>
 
@@ -381,7 +340,6 @@ export default function MainMenu ( props ) {
                         <li className={ path.indexOf( "elements/accordions" ) > -1 ? "active" : '' }><Link to={ `${process.env.PUBLIC_URL}/elements/accordions` }>Accordions</Link></li>
                         <li className={ path.indexOf( "elements/tabs" ) > -1 ? "active" : '' }><Link to={ `${process.env.PUBLIC_URL}/elements/tabs` }>Tabs</Link></li>
                         <li className={ path.indexOf( "elements/testimonials" ) > -1 ? "active" : '' }><Link to={ `${process.env.PUBLIC_URL}/elements/testimonials` }>Testimonials</Link></li>
-                        <li className={ path.indexOf( "elements/blog-posts" ) > -1 ? "active" : '' }><Link to={ `${process.env.PUBLIC_URL}/elements/blog-posts` }>Blog Posts</Link></li>
                         <li className={ path.indexOf( "elements/portfolios" ) > -1 ? "active" : '' }><Link to={ `${process.env.PUBLIC_URL}/elements/portfolios` }>Portfolio</Link></li>
                         <li className={ path.indexOf( "elements/cta" ) > -1 ? "active" : '' }><Link to={ `${process.env.PUBLIC_URL}/elements/cta` }>Call to Action</Link></li>
                         <li className={ path.indexOf( "elements/icon-boxes" ) > -1 ? "active" : '' }><Link to={ `${process.env.PUBLIC_URL}/elements/icon-boxes` }>Icon Boxes</Link></li>

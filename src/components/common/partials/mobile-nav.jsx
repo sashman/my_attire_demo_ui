@@ -114,50 +114,6 @@ function MobileMainNav ( props ) {
                 </li>
 
                 <li>
-                    <Link to={ `${process.env.PUBLIC_URL}/blog/classic` }>
-                        Blog
-                    </Link>
-
-                    <ul>
-                        <li><Link to={ `${process.env.PUBLIC_URL}/blog/classic` }>Classic</Link></li>
-                        <li><Link to={ `${process.env.PUBLIC_URL}/blog/listing` } >Listing</Link></li>
-                        <li>
-                            <Link to="#" className="sf-with-ul">Grid</Link>
-                            <ul>
-                                <li><Link to={ `${process.env.PUBLIC_URL}/blog/grid/2cols` }>Grid 2 columns</Link></li>
-                                <li><Link to={ `${process.env.PUBLIC_URL}/blog/grid/3cols` }>Grid 3 columns</Link></li>
-                                <li><Link to={ `${process.env.PUBLIC_URL}/blog/grid/4cols` }>Grid 4 columns</Link></li>
-                                <li><Link to={ `${process.env.PUBLIC_URL}/blog/grid/sidebar` }>Grid sidebar</Link></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <Link to="#" className="sf-with-ul">Masonry</Link>
-                            <ul>
-                                <li><Link to={ `${process.env.PUBLIC_URL}/blog/masonry/2cols` }>Masonry 2 columns</Link></li>
-                                <li><Link to={ `${process.env.PUBLIC_URL}/blog/masonry/3cols` }>Masonry 3 columns</Link></li>
-                                <li><Link to={ `${process.env.PUBLIC_URL}/blog/masonry/4cols` }>Masonry 4 columns</Link></li>
-                                <li><Link to={ `${process.env.PUBLIC_URL}/blog/masonry/sidebar` }>Masonry sidebar</Link></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <Link to="#" className="sf-with-ul">Mask</Link>
-                            <ul>
-                                <li><Link to={ `${process.env.PUBLIC_URL}/blog/mask/grid` }>Blog mask grid</Link></li>
-                                <li><Link to={ `${process.env.PUBLIC_URL}/blog/mask/masonry` }>Blog mask masonry</Link></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <Link to="#" className="sf-with-ul">Single Post</Link>
-                            <ul>
-                                <li><Link to={ `${process.env.PUBLIC_URL}/blog/single/3` }>Default with sidebar</Link></li>
-                                <li><Link to={ `${process.env.PUBLIC_URL}/blog/single-2/97` }>Fullwidth no sidebar</Link></li>
-                                <li><Link to={ `${process.env.PUBLIC_URL}/blog/single-3/98` }>Fullwidth with sidebar</Link></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-
-                <li>
                     <Link to={ `${process.env.PUBLIC_URL}/elements/list` } className="sf-with-ul">
                         Elements
                     </Link>

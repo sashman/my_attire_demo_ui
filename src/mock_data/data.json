@@ -129,11 +129,6 @@
             "class": "img-banners"
         },
         {
-            "url": "/elements/blog-posts",
-            "name": "blog posts",
-            "class": "img-blog-posts"
-        },
-        {
             "url": "/elements/buttons",
             "name": "buttons",
             "class": "img-buttons"

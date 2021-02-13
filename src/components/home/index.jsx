@@ -72,7 +72,7 @@ export default function HomePage () {
                         <span className="quote">“</span>
 
                         <div className="content">
-                            <h4><i>Sed egestas, antet vulputate volutpat, eros pede semperest, vitae luctus metus</i></h4>
+                            <h4><i>Pissy poo! Sed egestas, antet vulputate volutpat, eros pede semperest, vitae luctus metus</i></h4>
 
                             <h4><i>libero eu augue Morobi purus libero, faucibus acipiscing.</i></h4>
                         </div>
