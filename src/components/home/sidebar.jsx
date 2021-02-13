@@ -15,7 +15,10 @@ function SideBar ( props ) {
             for ( let i = 0; i < demoItems.length; i++ ) {
                 demoItems[ i ].classList.toggle( 'show' );
             }
-            document.querySelector( '.view-all-demos' ).classList.remove( 'disabled-hidden' );
+            const demos = document.querySelector( '.view-all-demos' )
+            if(demos){
+                demos.classList.remove( 'disabled-hidden' );
+            }
         } );
     } )
 
@@ -44,44 +47,44 @@ function SideBar ( props ) {
                         <ul className="menu sf-arrows">
                             <li className="megamenu-container" id="menu-home">
                                 <Link to={ `${process.env.PUBLIC_URL}/` } className="sf-with-ul">Home</Link>
+                            </li>
+                            <li className={ path.indexOf( "shop" ) > -1 ? 'active' : '' }>
+                                <Link to={ `${process.env.PUBLIC_URL}/shop/sidebar/list` } className="sf-with-ul">Woman</Link>
 
                                 <div className="megamenu demo left">
                                     <div className="menu-col">
-                                        <div className="menu-title">Choose your demo</div>
-
-                                        <div className="megamenu-action text-left">
-                                            <Link to="#ViewAll" className="btn view-all-demos" onClick={ showAllDemosHandler }><span>View All Demos</span><i className="icon-long-arrow-right"></i></Link>
-                                        </div>
+                                        <div className="menu-title">Categories</div>
+                                        <ul>
+                                            <li><Link to={ `${process.env.PUBLIC_URL}/shop/sidebar/list` }>Coats &amp; Jackets</Link></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </li>
                             <li className={ path.indexOf( "shop" ) > -1 ? 'active' : '' }>
-                                <Link to={ `${process.env.PUBLIC_URL}/shop/sidebar/list` } className="sf-with-ul">Shop</Link>
+                                <Link to={ `${process.env.PUBLIC_URL}/shop/sidebar/list` } className="sf-with-ul">Man</Link>
 
                                 <div className="megamenu demo left">
                                     <div className="menu-col">
-                                        <div className="menu-title">Shop pages</div>
-
+                                        <div className="menu-title">Categories</div>
                                         <ul>
-                                            <li><Link to={ `${process.env.PUBLIC_URL}/shop/sidebar/list` }>Shop List</Link></li>
+                                            <li><Link to={ `${process.env.PUBLIC_URL}/shop/sidebar/list` }>Coats &amp; Jackets</Link></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li className={ path.indexOf( "shop" ) > -1 ? 'active' : '' }>
+                                <Link to={ `${process.env.PUBLIC_URL}/shop/sidebar/list` } className="sf-with-ul">Kids</Link>
+
+                                <div className="megamenu demo left">
+                                    <div className="menu-col">
+                                        <div className="menu-title">Categories</div>
+                                        <ul>
+                                            <li><Link to={ `${process.env.PUBLIC_URL}/shop/sidebar/list` }>Coats &amp; Jackets</Link></li>
                                         </ul>
                                     </div>
                                 </div>
                             </li>
 
-                            <li className={ path.indexOf( "about" ) > -1 ? 'active' : '' }>
-                                <Link to={ `${process.env.PUBLIC_URL}/pages/about` } className="sf-with-ul">About us </Link>
-
-                                <div className="megamenu demo left">
-                                    <div className="menu-col">
-                                        <div className="menu-title">About us</div>
-
-                                        <ul>
-                                            <li><Link to={ `${process.env.PUBLIC_URL}/pages/about` }>About 01</Link></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
                         </ul>
                     </nav>
                 </div>

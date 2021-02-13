@@ -224,8 +224,8 @@
     "introBanners": [
         {
             "image": "/assets/images/home/sliders/slide.jpg",
-            "subtitle": "<h3>End of Season Sale</h3>",
-            "title": "<h4>Save 40% off</h4>",
+            "subtitle": "<h3>A new way of styling your wardrobe is here...</h3>",
+            "title": "<h4>All brands and styles you need in one place</h4>",
             "btnText": "<a href='/shop/sidebar/list'>discover now</a>"
         }
     ],
