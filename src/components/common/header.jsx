@@ -27,25 +27,6 @@ function Header ( props ) {
                 <div className="header-center text-center">
                     <p>Free Delivery For Members</p>
                 </div>
-
-                <div className="header-right">
-                    <div className="account">
-                        <Link to={ `${process.env.PUBLIC_URL}/shop/dashboard` } title="My account">
-                            <i className="icon-user"></i>
-                        </Link>
-                    </div>
-
-                    <div className="wishlist">
-                        <Link to={ `${process.env.PUBLIC_URL}/shop/wishlist` } title="Wishlist">
-                            <i className="icon-heart-o"></i>
-                            <span className="wishlist-count badge">{ isWishlist.length }</span>
-                        </Link>
-                    </div>
-
-                    <CartMenu />
-
-                    <p className="price">$ { total.toLocaleString( undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 } ) }</p>
-                </div>
             </div>
         </div>
     );
