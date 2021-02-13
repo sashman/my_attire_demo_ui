@@ -35,7 +35,7 @@ function SideBar ( props ) {
             <div className="header sidebar">
                 <div className="header-top">
                     <Link to={ `${process.env.PUBLIC_URL}` } className="logo">
-                        <img src={ `${process.env.PUBLIC_URL}/assets/images/home/logo.png` } alt="OLLA Logo" width="100" height="20" />
+                        <img src={ `${process.env.PUBLIC_URL}/assets/images/home/logo.svg` } alt="OLLA Logo" width="100" height="20" />
                     </Link>
                 </div>
 

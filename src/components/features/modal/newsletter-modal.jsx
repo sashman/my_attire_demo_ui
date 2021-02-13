@@ -72,7 +72,7 @@ function NewsletterModal ( props ) {
 
                             <div className="banner-content text-center">
 
-                                <img src={ `${process.env.PUBLIC_URL}/assets/images/popup/newsletter/logo.png` } alt="logo" className="logo" width="60" height="15" />
+                                <img src={ `${process.env.PUBLIC_URL}/assets/images/popup/newsletter/logo.svg` } alt="logo" className="logo" width="60" height="15" />
                                 <h2 className="banner-title">get <span>25<span style={ { fontWeight: '400' } }>%</span></span> off</h2>
                                 <p>Subscribe to the Molla eCommerce newsletter to receive timely updates from your favorite products.</p>
 
